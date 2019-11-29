@@ -1,7 +1,9 @@
 import React from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 
-let ComponentsScreen = () => {
+let ComponentsScreen = props => {
+
+  console.log(props);
 
   let firstFont = styles.firstStyle
   let first = <Text style={firstFont}>Greting started with react native!</Text>
@@ -14,7 +16,7 @@ let ComponentsScreen = () => {
     <View>
        {first}
        {second}
-     </View>
+    </View>
   )
 }
 
