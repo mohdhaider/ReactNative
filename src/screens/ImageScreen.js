@@ -1,16 +1,18 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import { Text, StyleSheet, View } from 'react-native';
+import ImageDetail from '../components/ImageDetail'
 
 let ImageScreen = props => {
 
   console.log(props);
 
-  let firstFont = styles.firstStyle
-  let first = <Text style={firstFont}>Images Screen</Text>
-
   return (
     <View>
-       {first}
+      <ImageDetail />
+      <ImageDetail />
+      <ImageDetail />
+      <ImageDetail />
+      <ImageDetail />
     </View>
   )
 }
