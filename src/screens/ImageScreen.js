@@ -4,15 +4,25 @@ import ImageDetail from '../components/ImageDetail'
 
 let ImageScreen = props => {
 
-  console.log(props);
+  //console.log(props);
 
   return (
     <View>
-      <ImageDetail />
-      <ImageDetail />
-      <ImageDetail />
-      <ImageDetail />
-      <ImageDetail />
+      <ImageDetail
+        title="Forest"
+        imageSource={require('../../assets/forest.jpg')}
+        ratings="1"
+      />
+      <ImageDetail
+        title="Beach"
+        imageSource={require('../../assets/beach.jpg')}
+        ratings="2"
+      />
+      <ImageDetail
+        title="Mountain"
+        imageSource={require('../../assets/mountain.jpg')}
+        ratings="3"
+      />
     </View>
   )
 }

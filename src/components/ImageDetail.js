@@ -1,10 +1,16 @@
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, Image } from 'react-native';
 
-let ImageDetail = () => {
+let ImageDetail = ({imageSource, title, ratings}) => {
+
+  //console.log("Image Detail props")
+  //console.log(props)
+
   return (
     <View>
-      <Text>Image Detail Screen</Text>
+      <Image source={imageSource}/>
+      <Text>{title}</Text>
+      <Text>Image Score - {ratings}</Text>
     </View>
   )
 };
